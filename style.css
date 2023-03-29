@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+/* img{
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+    z-index: 0;
+} */
+#container{
+    padding-top: 5%;
+    background-image: url(Image/handholdingphone.png  );
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+#Apparitioncontainer{
+    margin-top: 2%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 50%;
+    width: 25%;
+    overflow: hidden;
+}
+#converter{
+    
+    background-color: rgba(123, 9, 38, 0.695);
+    /* différentes couleurs possibles : 
+    background-color: rgba(164, 107, 8, 0.974);
+    background-color: rgba(218, 215, 211, 0.948);*/
+    
+    border-radius: 10px;
+    border: 2px rgba(38, 1, 77, 0.295) solid;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-size: 28px;
+    opacity: 0;
+    transform: scale(1)translateY(-500%);
+    animation: apparition 1.95s .8s ease forwards;
+    transition: all 0.8s ;
+    
+}
+#euro{
+    font-size: 30px;
+}
+
+input{
+    width: 60%;
+    border-radius: 10PX;
+}
+
+@keyframes apparition{
+    100%{
+        opacity: 1;
+        transform : none;
+        
+        }
+}
