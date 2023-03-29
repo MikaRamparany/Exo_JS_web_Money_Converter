@@ -25,9 +25,12 @@ body{
     justify-content: center;
     height: 100%;
     width: 100%;
+    
 }
 #Apparitioncontainer{
     margin-top: 2%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     display: flex;
     align-items: end;
     justify-content: center;
@@ -37,13 +40,13 @@ body{
 }
 #converter{
     
-    background-color: rgba(123, 9, 38, 0.695);
+    background-color: rgba(251, 251, 251, 0.474);
     /* différentes couleurs possibles : 
     background-color: rgba(164, 107, 8, 0.974);
     background-color: rgba(218, 215, 211, 0.948);*/
     
     border-radius: 10px;
-    border: 2px rgba(38, 1, 77, 0.295) solid;
+    border: 2px rgba(139, 135, 144, 0.443) solid;
     height: 90%;
     width: 100%;
     display: flex;
@@ -59,11 +62,27 @@ body{
 }
 #euro{
     font-size: 30px;
+    opacity: 0;
+    transform: scale(1)translateY(-500%);
+    animation: apparition 1.95s .8s ease forwards;
+    transition: all 0.8s ;
+    
 }
 
 input{
     width: 60%;
-    border-radius: 10PX;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(1)translateY(-500%);
+    animation: apparition 1.95s .8s ease forwards;
+    transition: all 0.8s ;
+}
+p{
+    color: white;
+}
+
+label{
+    color:white;
 }
 
 @keyframes apparition{
