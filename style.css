@@ -17,9 +17,11 @@ body{
     z-index: 0;
 } */
 #container{
+    position:relative;
     padding-top: 5%;
-    background-image: url(Image/han)
+    background-image: url(Image/handholdingphone.png);
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,13 +42,13 @@ body{
 }
 #converter{
     
-    background-color: rgba(251, 251, 251, 0.474);
+    background-color: rgba(251, 251, 251, 0.163);
     /* différentes couleurs possibles : 
     background-color: rgba(164, 107, 8, 0.974);
     background-color: rgba(218, 215, 211, 0.948);*/
     
     border-radius: 10px;
-    border: 2px rgba(139, 135, 144, 0.443) solid;
+    /* border: 2px rgba(139, 135, 144, 0.443) solid; */
     height: 90%;
     width: 100%;
     display: flex;
@@ -70,6 +72,7 @@ body{
 }
 
 input{
+    background-color: rgba(253, 253, 253, 0.757);
     width: 60%;
     border-radius: 10px;
     opacity: 0;
